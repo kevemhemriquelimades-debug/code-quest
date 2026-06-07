@@ -2,82 +2,48 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Code Quest - Cobrinha</title>
+<title>Code Quest</title>
 <style>
 body{
+  font-family:Arial;
+  text-align:center;
   background:#111827;
   color:white;
-  text-align:center;
-  font-family:Arial;
 }
-canvas{
-  background:black;
-  border:3px solid #22c55e;
-  margin-top:20px;
+button{
+  width:80px;
+  height:80px;
+  font-size:30px;
+  margin:5px;
+}
+#score{
+  font-size:24px;
 }
 </style>
 </head>
 <body>
 
 <h1>🎮 Code Quest</h1>
-<h2>🐍 Jogo da Cobrinha</h2>
-<p>Use as setas do teclado para jogar.</p>
+<h2>🐱 Pegue o Gatinho</h2>
 
-<canvas id="game" width="400" height="400"></canvas>
+<p id="score">Pontos: 0</p>
+
+<div style="font-size:100px;" id="cat">🐱</div>
+
+<button onclick="pegar()">PEGAR</button>
 
 <script>
-const canvas = document.getElementById("game");
-const ctx = canvas.getContext("2d");
+let pontos = 0;
 
-let snake = [{x:10,y:10}];
-let food = {x:15,y:15};
-let dx = 1;
-let dy = 0;
+function pegar(){
+  pontos++;
+  document.getElementById("score").innerHTML =
+    "Pontos: " + pontos;
 
-document.addEventListener("keydown", e=>{
- if(e.key==="ArrowUp"){dx=0;dy=-1;}
- if(e.key==="ArrowDown"){dx=0;dy=1;}
- if(e.key==="ArrowLeft"){dx=-1;dy=0;}
- if(e.key==="ArrowRight"){dx=1;dy=0;}
-});
-
-function draw(){
- ctx.clearRect(0,0,400,400);
-
- ctx.fillStyle="red";
- ctx.fillRect(food.x*20,food.y*20,20,20);
-
- ctx.fillStyle="lime";
- snake.forEach(part=>{
-   ctx.fillRect(part.x*20,part.y*20,20,20);
- });
-
- let head={
-   x:snake[0].x+dx,
-   y:snake[0].y+dy
- };
-
- snake.unshift(head);
-
- if(head.x===food.x && head.y===food.y){
-   food={
-     x:Math.floor(Math.random()*20),
-     y:Math.floor(Math.random()*20)
-   };
- } else {
-   snake.pop();
- }
-
- if(
-   head.x<0 || head.y<0 ||
-   head.x>=20 || head.y>=20
- ){
-   alert("Fim de jogo!");
-   snake=[{x:10,y:10}];
- }
+  const gatos = ["🐱","😺","😸","😻"];
+  document.getElementById("cat").innerHTML =
+    gatos[Math.floor(Math.random()*gatos.length)];
 }
-
-setInterval(draw,150);
 </script>
 
 </body>
