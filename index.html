@@ -3,112 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Space Quest</title>
+<title>Criakid</title>
 
 <style>
 body{
-  margin:0;
-  background:black;
-  color:white;
-  text-align:center;
   font-family:Arial;
+  text-align:center;
+  background:#4f46e5;
+  color:white;
+  margin:0;
 }
 
-#game{
-  background:#000;
-  display:block;
-  margin:auto;
-  border:2px solid white;
+header{
+  padding:20px;
 }
 
 button{
-  width:120px;
+  width:250px;
   height:60px;
-  font-size:24px;
   margin:10px;
+  font-size:20px;
+  border:none;
+  border-radius:12px;
 }
 </style>
 </head>
 
 <body>
 
-<h2>🚀 Space Quest</h2>
+<header>
+<h1>🌈 Criakid</h1>
+<p>Aprenda programação criando jogos e animações!</p>
+</header>
 
-<canvas id="game" width="350" height="500"></canvas>
+<button>🎮 Criar Jogo</button><br>
+<button>🎬 Criar Animação</button><br>
+<button>📚 Aprender Programação</button><br>
+<button>👤 Minha Conta</button><br>
 
-<br>
-
-<button onclick="atirar()">🔫 ATIRAR</button>
-
-<script>
-const canvas = document.getElementById("game");
-const ctx = canvas.getContext("2d");
-
-let nave = {
- x:160,
- y:440
-};
-
-let tiros = [];
-let inimigo = {
- x:150,
- y:50
-};
-
-let pontos = 0;
-
-function atirar(){
- tiros.push({
-   x:nave.x+15,
-   y:nave.y
- });
-}
-
-canvas.addEventListener("touchstart",e=>{
- let toque = e.touches[0];
- let rect = canvas.getBoundingClientRect();
-
- nave.x = toque.clientX - rect.left - 20;
-});
-
-function loop(){
-
- ctx.clearRect(0,0,350,500);
-
- ctx.font="40px Arial";
- ctx.fillText("🚀",nave.x,nave.y);
-
- ctx.fillText("👾",inimigo.x,inimigo.y);
-
- tiros.forEach(t=>{
-   t.y -= 8;
-
-   ctx.fillStyle="yellow";
-   ctx.fillRect(t.x,t.y,4,12);
-
-   if(
-      t.x > inimigo.x &&
-      t.x < inimigo.x+40 &&
-      t.y < inimigo.y+40
-   ){
-      pontos++;
-
-      inimigo.x =
-      Math.random()*300;
-
-      inimigo.y = 50;
-   }
- });
-
- ctx.fillStyle="white";
- ctx.font="20px Arial";
- ctx.fillText("Pontos: "+pontos,10,25);
-
- requestAnimationFrame(loop);
-}
-
-loop();
-</script>
+<h3>🚀 Crie jogos 2D e 3D</h3>
+<h3>🧩 Aprenda com blocos</h3>
+<h3>🎨 Crie animações por episódios</h3>
 
 </body>
 </html>
