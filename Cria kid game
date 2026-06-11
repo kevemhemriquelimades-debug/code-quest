@@ -30,7 +30,7 @@ button{
 
 <button onclick="alert('Aqui vai abrir a página Criar Jogo')">🎮 Criar Jogo</button><br>
 <button onclick="alert('Aqui vai abrir a página Criar Animação')">🎬 Criar Animação</button><br>
-<button onclick="Aprender Programação')">📚 Aprender Programação</button><br>
+<button onclick=" mostrar Aprender Programação')">📚 Aprender Programação</button><br>
 <button onclick="alert('Aqui vai abrir a página Minha Conta')">👤 Minha Conta</button><br>
 
 <h3>🚀 Crie jogos 2D e 3D</h3>
