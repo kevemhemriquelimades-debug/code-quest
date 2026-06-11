@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+q<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Criakid</title>
-
 <style>
 body{
   font-family:Arial;
@@ -12,12 +11,8 @@ body{
   background:#4f46e5;
   color:white;
   margin:0;
-}
-
-header{
   padding:20px;
 }
-
 button{
   width:250px;
   height:60px;
@@ -28,358 +23,59 @@ button{
 }
 </style>
 </head>
-
 <body>
 
-<header>
 <h1>🌈 Criakid</h1>
 <p>Aprenda programação criando jogos e animações!</p>
-</header>
 
-<button>🎮 Criar Jogo</button><br>
-<button>🎬 Criar Animação</button><br>
-<button>📚 Aprender Programação</button><br>
-<button>👤 Minha Conta</button><br>
+<button onclick="alert('Aqui vai abrir a página Criar Jogo')">🎮 Criar Jogo</button><br>
+<button onclick="alert('Aqui vai abrir a página Criar Animação')">🎬 Criar Animação</button><br>
+<button onclick="alert('Aqui vai abrir a página Aprender Programação')">📚 Aprender Programação</button><br>
+<button onclick="alert('Aqui vai abrir a página Minha Conta')">👤 Minha Conta</button><br>
 
 <h3>🚀 Crie jogos 2D e 3D</h3>
 <h3>🧩 Aprenda com blocos</h3>
 <h3>🎨 Crie animações por episódios</h3>
 
 </body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
 </html><!DOCTYPE html>
 <html>
 <head>
-<title>Aprender Programação</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criakid</title>
+<style>
+body{
+  font-family:Arial;
+  text-align:center;
+  background:#4f46e5;
+  color:white;
+  margin:0;
+  padding:20px;
+}
+button{
+  width:250px;
+  height:60px;
+  margin:10px;
+  font-size:20px;
+  border:none;
+  border-radius:12px;
+}
+</style>
 </head>
 <body>
 
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Aprender Programação</title>
-</head>
-<body>
-
-<h1>📚 Aprender Programação</h1>
-
-<button onclick="explicar('print')">🖨️ PRINT</button>
-<button onclick="explicar('move')">➡️ MOVE</button>
-<button onclick="explicar('repeat')">🔁 REPEAT</button>
-
-<p id="info"></p>
-
-<script>
-function explicar(bloco){
-
-if(bloco==='print'){
-document.getElementById('info').innerHTML =
-'PRINT mostra texto na tela.';
-}
-
-if(bloco==='move'){
-document.getElementById('info').innerHTML =
-'MOVE move um personagem.';
-}
-
-if(bloco==='repeat'){
-document.getElementById('info').innerHTML =
-'REPEAT repete ações.';
-}
-
-}
-</script>
+<h1>🌈 Criakid</h1>
+<p>Aprenda programação criando jogos e animações!</p>
+
+<button onclick="alert('Aqui vai abrir a página Criar Jogo')">🎮 Criar Jogo</button><br>
+<button onclick="alert('Aqui vai abrir a página Criar Animação')">🎬 Criar Animação</button><br>
+<button onclick="alert('Aqui vai abrir a página Aprender Programação')">📚 Aprender Programação</button><br>
+<button onclick="alert('Aqui vai abrir a página Minha Conta')">👤 Minha Conta</button><br>
+
+<h3>🚀 Crie jogos 2D e 3D</h3>
+<h3>🧩 Aprenda com blocos</h3>
+<h3>🎨 Crie animações por episódios</h3>
 
 </body>
 </html>
